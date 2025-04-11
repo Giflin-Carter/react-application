@@ -2,39 +2,44 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import Profilecard from './Profile';
+import ProfileCard from './ProfileCard';
 import GridView from './GridView';
 import Todo from './Todo';
-import Navbar from './Navbar';
+import Navbar from './NavBar';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import store from './store.js';
-import{Provider} from 'react-redux';
+import { Provider } from 'react-redux';
+import store from './store';
 
-const profilelist = {
-  name: "Giflin Carter",
+const profile = {
+  name: "Giflin",
   department: "AIDS",
   year: 2,
-  mobile: 9677534367,
+  mobile: 9360337051,
   address: "xxxx",
   profileImage: reactLogo,
 };
 
 function App() {
+
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         {/* <Route path="/todo" element={<Todo />} /> */}
-        <Route path="/Profilecard" element={<ProfileCard profile={profilelist}/>
-} />
+        <Route path="/profile" element={<ProfileCard profile={profile}/>} />
         <Route path="/gridview" element={<GridView />} />
-
-        <Route path="/todo" element={ <Provider store={store}> <Todo/></Provider> }/>
-
-       
+        
+          <Route
+          path="/todo"
+          element={
+            <Provider store={store}>
+              <Todo/>
+            </Provider>
+          }> 
+          </Route>
+        
       </Routes>
     </BrowserRouter>
   );
 }
-
 export default App;

@@ -8,7 +8,7 @@ const Navbar = () => {
         display: "flex",
         justifyContent: "end",
         gap: "20px",
-        backgroundColor: "grey",
+        backgroundColor: "black",
         padding: "10px",
       }}
     >
