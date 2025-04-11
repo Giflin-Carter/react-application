@@ -5,16 +5,16 @@ import './App.css';
 import ProfileCard from './ProfileCard';
 import GridView from './GridView';
 import Todo from './Todo';
-import Navbar from './NavBar';
+import Navbar from './Navbar';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from 'react-redux';
 import store from './store';
 
 const profile = {
-  name: "Giflin",
+  name: "Giflin Carter",
   department: "AIDS",
   year: 2,
-  mobile: 9360337051,
+  mobile: 9677534367,
   address: "xxxx",
   profileImage: reactLogo,
 };

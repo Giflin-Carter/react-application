@@ -39,7 +39,7 @@ const ProfileCard = ({profile}) => {
                 </div>
                 <div style={{ marginBottom: "10px" }}>
                     <span style={{ fontWeight: "bold" }}>Department: </span>
-                    <span>{profile.Department}</span>
+                    <span>{profile.department}</span>
                 </div>
                 <div style={{ marginBottom: "10px" }}>
                     <span style={{ fontWeight: "bold" }}>Year: </span>
