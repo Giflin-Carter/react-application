@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
       <div>
         <Link
-          to="/Profilecard"
+          to="/profile"
           style={{ color: "white", textDecoration: "none" }}
         >
           Profile Card
