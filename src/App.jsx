@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <Routes>
         {/* <Route path="/todo" element={<Todo />} /> */}
-        <Route path="/profilecard" element={<ProfileCard profile={profilelist}/>
+        <Route path="/Profilecard" element={<ProfileCard profile={profilelist}/>
 } />
         <Route path="/gridview" element={<GridView />} />
 
