@@ -9,6 +9,7 @@ import Navbar from './Navbar';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from 'react-redux';
 import store from './store';
+import Home from './Home'
 
 const profile = {
   name: "Giflin Carter",
@@ -25,7 +26,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        {/* <Route path="/todo" element={<Todo />} /> */}
+        {/* {<Route path="/todo" element={<Todo />} /> } */}
+        <Route path="/" element={<Home />} />
         <Route path="/profile" element={<ProfileCard profile={profile}/>} />
         <Route path="/gridview" element={<GridView />} />
         
